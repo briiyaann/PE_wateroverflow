@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <title>Overflow Solution</title>
+  </head>
+  <body>
+    {% if result %}
+      <p>
+        {{ result }}
+      </p>
+    {% endif %}
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div>
+        <label for="row">Row</label>
+        {{ form.row }}
+      </div>
+      <div>
+        <label for="glass">Glass</label>
+        {{ form.glass }}
+      </div>
+      <div>
+        <label for="water">Water Amount</label>
+        {{ form.water }}
+      </div>
+      <input type="submit" value="Calculate"/>
+    </form>
+  </body>
+</html>
