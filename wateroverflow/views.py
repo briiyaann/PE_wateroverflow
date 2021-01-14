@@ -26,8 +26,8 @@ def overflow(request):
 
 def liquidMeter(i, j, K):
     # start i and j from 1 since the position of i from the picture starts from zero
-    # i = i + 1
-    # j = j + 1
+    i = i + 1
+    j = j + 1
 
     if (j > i):
         return -1
